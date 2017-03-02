@@ -1,10 +1,3 @@
-
-Python 2.7 needed
-
-Move to bin folder and run
-./sampler.py 5 "THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG"
-echo -n "THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG" | bin/sampler.py
-
 #Stream Sampler
 
 Stream sampler that picks a random (representative) sample of size k from a stream of values with unknown and possibly very large length.
@@ -43,6 +36,9 @@ $ bin/sampler -i "http://www.random.org/strings/?num=100&len=8&digits=on&upperal
 ```bash
 $ curl -s 0 "http://www.random.org/strings/?num=100&len=8&digits=on&upperalpha=on&loweralpha=on&unique=on&format=plain&rnd=new" | bin/sampler --length=20
 ```
+```bash
+echo -n "THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG" | bin/sampler.py
+```
 
 ##Tests
 
@@ -55,3 +51,4 @@ $ nose
 ##Feedback
 
 Add an issue, open a PR, drop an email! I would love to hear from you!
+
