@@ -45,7 +45,7 @@ echo -n "THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG" | bin/sampler.py
 You can run tests locally with
 
 ```bash
-$ nose
+$ nosetests -v
 ```
 
 ##Feedback
